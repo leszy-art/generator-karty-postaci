@@ -73,5 +73,5 @@ if st.button("Generuj postać"):
  st.write("Szybkość:", szybkość)
  st.write("Zręczność:", zręczność)
  st.write("Inteligencja:", inteligencja)
-st.write("Charyzma:", charyzma)
-st.write("Szczęście:", szczęście)
+ st.write("Charyzma:", charyzma)
+ st.write("Szczęście:", szczęście)
