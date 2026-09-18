@@ -28,10 +28,11 @@ koniec_męski = [
   "sławój"
 ]
 
+
+płeć = st.selectbox("Wybierz płeć:", ["Kobieta", "Mężczyzna"], key="plec")
 wylosowany_początek = random.choice(początek)
 wylosowany_koniec_męski = random.choice(koniec_męski)
 wylosowany_koniec_damski = random.choice(koniec_damski)
-płeć = st.selectbox("Wybierz płeć:", ["Kobieta", "Mężczyzna"], key="plec")
 if "wygenerowana" not in st.session_state:
   st.session_state.wygenerowana = False
 if not st.session_state.wygenerowana:
@@ -75,10 +76,10 @@ if przycisk:
   zręczność = random.randint(1,30)
   szybkość = random.randint(1,30)
   st.write("Klasa:", "Mnich Alkoholik")
- st.write("STATYSTYKI:")
- st.write("Siła:", siła)
- st.write("Szybkość:", szybkość)
- st.write("Zręczność:", zręczność)
- st.write("Inteligencja:", inteligencja)
- st.write("Charyzma:", charyzma)
- st.write("Szczęście:", szczęście)
+  st.write("STATYSTYKI:")
+  st.write("Siła:", siła)
+  st.write("Szybkość:", szybkość)
+  st.write("Zręczność:", zręczność)
+  st.write("Inteligencja:", inteligencja)
+  st.write("Charyzma:", charyzma)
+  st.write("Szczęście:", szczęście)
