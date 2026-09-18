@@ -55,11 +55,11 @@ wylosowana_klasa = random.choice(klasy)
 if wylosowana_klasa == "Paladyn Kapitalista":
   siła = random.randint(81,100)
   inteligencja = random.randint(61,100)
-  print("Klasa:", "Paladyn Kapitalista")
+  st.write("Klasa:", "Paladyn Kapitalista")
 elif wylosowana_klasa == "Pół Majster - Pół Grafik":
   zręczność = random.randint(61,100)
   charyzma = random.randint(61,100)
-  print("Klasa:", "Pół Majster - Pół Grafik")
+  st.write("Klasa:", "Pół Majster - Pół Grafik")
 elif wylosowana_klasa == "Przeklęty Bard":
   szczęście = random.randint(1,30)
   charyzma = random.randint(61,100)
