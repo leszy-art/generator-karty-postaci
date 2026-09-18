@@ -46,15 +46,14 @@ if st.button("Generuj postać"):
  elif płeć == "Mężczyzna":
    st.write("Imię:", wylosowany_początek + wylosowany_koniec_męski)
    st.write("Płeć: Mężczyzna")
-
-klasy = [
-  "Paladyn Kapitalista", 
-  "Pół Majster - Pół Grafik", # łotrzyk,
-  "Przeklęty Bard", 
-  "Mnich Alkoholik" 
-]
-wylosowana_klasa = random.choice(klasy)
-if wylosowana_klasa == "Paladyn Kapitalista":
+   klasy = [
+   "Paladyn Kapitalista", 
+   "Pół Majster - Pół Grafik", # łotrzyk,
+   "Przeklęty Bard", 
+   "Mnich Alkoholik" 
+    ]
+ wylosowana_klasa = random.choice(klasy)
+ if wylosowana_klasa == "Paladyn Kapitalista":
   siła = random.randint(81,100)
   inteligencja = random.randint(61,100)
   st.write("Klasa:", "Paladyn Kapitalista")
