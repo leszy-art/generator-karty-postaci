@@ -40,12 +40,12 @@ if st.button("Generuj postać"):
  charyzma = random.randint(1,100)
  szczęście = random.randint(1,100)
  zręczność = random.randint(1,100)
-if płeć == "Kobieta":
-  st.write("Imię:", wylosowany_początek + wylosowany_koniec_damski)
-  st.write("Płeć: Kobieta")
- elif płeć == "Mężczyzna":
-  st.write("Imię:", wylosowany_początek + wylosowany_koniec_męski)
-  st.write("Płeć: Mężczyzna")
+ if płeć == "Kobieta":
+   st.write("Imię:", wylosowany_początek + wylosowany_koniec_damski)
+   st.write("Płeć: Kobieta")
+  elif płeć == "Mężczyzna":
+   st.write("Imię:", wylosowany_początek + wylosowany_koniec_męski)
+   st.write("Płeć: Mężczyzna")
 
 klasy = [
   "Paladyn Kapitalista", 
