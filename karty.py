@@ -75,7 +75,7 @@ if przycisk:
   elif wylosowana_klasa == "Mnich Alkoholik":
    zręczność = random.randint(1,30)
    szybkość = random.randint(1,30)
-  st.write("Klasa:", "Mnich Alkoholik")
+   st.write("Klasa:", "Mnich Alkoholik")
   st.write("STATYSTYKI:")
   st.write("Siła:", siła)
   st.write("Szybkość:", szybkość)
