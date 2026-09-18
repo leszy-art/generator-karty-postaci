@@ -31,18 +31,13 @@ koniec_męski = [
 wylosowany_początek = random.choice(początek)
 wylosowany_koniec_męski = random.choice(koniec_męski)
 wylosowany_koniec_damski = random.choice(koniec_damski)
-while True:
  płeć = st.selectbox("Wybierz płeć:", ["Kobieta", "Mężczyzna"], key="plec")
- if płeć == "1":
+ if płeć == "Kobieta":
   print("Imię:", wylosowany_początek + wylosowany_koniec_damski)
   print("Płeć: Kobieta")
-  break
- elif płeć == "2":
+ elif płeć == "Mężczyzna":
   print("Imię:", wylosowany_początek + wylosowany_koniec_męski)
   print("Płeć: Mężczyzna")
-  break
- else:
-  print("Wpisz 1 albo 2")
   
 siła = random.randint(1,100)
 szybkość = random.randint(1,100)
