@@ -40,12 +40,12 @@ else:
   przycisk = st.button("Generuj kolejną")
 if przycisk:
   st.session_state.wygenerowana = True
- siła = random.randint(1,100)
- szybkość = random.randint(1,100)
- inteligencja = random.randint(1,100)
- charyzma = random.randint(1,100)
- szczęście = random.randint(1,100)
- zręczność = random.randint(1,100)
+  siła = random.randint(1,100)
+  szybkość = random.randint(1,100)
+  inteligencja = random.randint(1,100)
+  charyzma = random.randint(1,100)
+  szczęście = random.randint(1,100)
+  zręczność = random.randint(1,100)
  if płeć == "Kobieta":
    st.write("Imię:", wylosowany_początek + wylosowany_koniec_damski)
    st.write("Płeć: Kobieta")
