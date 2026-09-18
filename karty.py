@@ -32,13 +32,13 @@ wylosowany_początek = random.choice(początek)
 wylosowany_koniec_męski = random.choice(koniec_męski)
 wylosowany_koniec_damski = random.choice(koniec_damski)
 płeć = st.selectbox("Wybierz płeć:", ["Kobieta", "Mężczyzna"], key="plec")
-if st.button("Generuj postać"):
-if płeć == "Kobieta":
- st.write("Imię:", wylosowany_początek + wylosowany_koniec_damski)
- st.write("Płeć: Kobieta")
-elif płeć == "Mężczyzna":
- st.write("Imię:", wylosowany_początek + wylosowany_koniec_męski)
- st.write("Płeć: Mężczyzna")
+ if st.button("Generuj postać"):
+ if płeć == "Kobieta":
+  st.write("Imię:", wylosowany_początek + wylosowany_koniec_damski)
+  st.write("Płeć: Kobieta")
+ elif płeć == "Mężczyzna":
+  st.write("Imię:", wylosowany_początek + wylosowany_koniec_męski)
+  st.write("Płeć: Mężczyzna")
   
 siła = random.randint(1,100)
 szybkość = random.randint(1,100)
