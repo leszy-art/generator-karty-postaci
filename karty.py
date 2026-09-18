@@ -43,7 +43,7 @@ if st.button("Generuj postać"):
  if płeć == "Kobieta":
    st.write("Imię:", wylosowany_początek + wylosowany_koniec_damski)
    st.write("Płeć: Kobieta")
-  elif płeć == "Mężczyzna":
+ elif płeć == "Mężczyzna":
    st.write("Imię:", wylosowany_początek + wylosowany_koniec_męski)
    st.write("Płeć: Mężczyzna")
 
