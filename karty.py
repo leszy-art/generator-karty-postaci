@@ -32,6 +32,7 @@ wylosowany_początek = random.choice(początek)
 wylosowany_koniec_męski = random.choice(koniec_męski)
 wylosowany_koniec_damski = random.choice(koniec_damski)
 płeć = st.selectbox("Wybierz płeć:", ["Kobieta", "Mężczyzna"], key="plec")
+if st.button("Generuj postać"):
 if płeć == "Kobieta":
  st.write("Imię:", wylosowany_początek + wylosowany_koniec_damski)
  st.write("Płeć: Kobieta")
