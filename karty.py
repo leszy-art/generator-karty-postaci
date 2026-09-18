@@ -34,20 +34,18 @@ wylosowany_koniec_męski = random.choice(koniec_męski)
 wylosowany_koniec_damski = random.choice(koniec_damski)
 płeć = st.selectbox("Wybierz płeć:", ["Kobieta", "Mężczyzna"], key="plec")
 if st.button("Generuj postać"):
- if płeć == "Kobieta":
-  st.write("Imię:", wylosowany_początek + wylosowany_koniec_damski)
-  st.write("Płeć: Kobieta")
- elif płeć == "Mężczyzna":
-  st.write("Imię:", wylosowany_początek + wylosowany_koniec_męski)
-  st.write("Płeć: Mężczyzna")
-
-if st.button("Generuj postać"):
  siła = random.randint(1,100)
  szybkość = random.randint(1,100)
  inteligencja = random.randint(1,100)
  charyzma = random.randint(1,100)
  szczęście = random.randint(1,100)
  zręczność = random.randint(1,100)
+if płeć == "Kobieta":
+  st.write("Imię:", wylosowany_początek + wylosowany_koniec_damski)
+  st.write("Płeć: Kobieta")
+ elif płeć == "Mężczyzna":
+  st.write("Imię:", wylosowany_początek + wylosowany_koniec_męski)
+  st.write("Płeć: Mężczyzna")
 
 klasy = [
   "Paladyn Kapitalista", 
