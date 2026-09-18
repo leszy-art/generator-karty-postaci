@@ -1,14 +1,6 @@
+import streamlit as st
 import random
-print(" =================")
-print("|                 |")
-print("|  KARTA POSTACI  |")
-print("|                 |")
-print(" =================")
-print("")
-print("Wybierz płeć:")
-print("1. Kobieta")
-print("2. Mężczyzna")
-print("")
+st.title("KARTA POSTACI")
 początek = [
   "Boży",
   "Dar",
@@ -40,7 +32,7 @@ wylosowany_początek = random.choice(początek)
 wylosowany_koniec_męski = random.choice(koniec_męski)
 wylosowany_koniec_damski = random.choice(koniec_damski)
 while True:
- płeć = input("")
+ płeć = st.selectbox("Wybierz płeć:", ["Kobieta"],["Mężczyzna"])
  if płeć == "1":
   print("Imię:", wylosowany_początek + wylosowany_koniec_damski)
   print("Płeć: Kobieta")
