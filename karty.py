@@ -1,7 +1,6 @@
 import streamlit as st
 import random
 st.title("KARTA POSTACI")
-st.write("Wybierz płeć:")
 początek = [
   "Boży",
   "Dar",
@@ -57,15 +56,15 @@ if st.button("Generuj postać"):
   siła = random.randint(81,100)
   inteligencja = random.randint(61,100)
   st.write("Klasa:", "Paladyn Kapitalista")
-elif wylosowana_klasa == "Pół Majster - Pół Grafik":
+ elif wylosowana_klasa == "Pół Majster - Pół Grafik":
   zręczność = random.randint(61,100)
   charyzma = random.randint(61,100)
   st.write("Klasa:", "Pół Majster - Pół Grafik")
-elif wylosowana_klasa == "Przeklęty Bard":
+ elif wylosowana_klasa == "Przeklęty Bard":
   szczęście = random.randint(1,30)
   charyzma = random.randint(61,100)
   st.write("Klasa:", "Przeklęty Bard")
-elif wylosowana_klasa == "Mnich Alkoholik":
+ elif wylosowana_klasa == "Mnich Alkoholik":
   zręczność = random.randint(1,30)
   szybkość = random.randint(1,30)
   st.write("Klasa:", "Mnich Alkoholik")
