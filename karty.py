@@ -32,7 +32,14 @@ wylosowany_początek = random.choice(początek)
 wylosowany_koniec_męski = random.choice(koniec_męski)
 wylosowany_koniec_damski = random.choice(koniec_damski)
 płeć = st.selectbox("Wybierz płeć:", ["Kobieta", "Mężczyzna"], key="plec")
-if st.button("Generuj postać"):
+if "wygenerowana" not in st.session_state:
+  st.session_state.wygenerowana = False
+if not st.session_state.wygenerowana:
+  przycisk = st.button("Generuj postać")
+else: 
+  przycisk = st.button("Generuj kolejną")
+ if przycisk:
+    st.session_state.wygenerowana = True
  siła = random.randint(1,100)
  szybkość = random.randint(1,100)
  inteligencja = random.randint(1,100)
