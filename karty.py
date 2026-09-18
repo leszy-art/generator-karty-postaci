@@ -38,8 +38,8 @@ if not st.session_state.wygenerowana:
   przycisk = st.button("Generuj postać")
 else: 
   przycisk = st.button("Generuj kolejną")
- if przycisk:
-    st.session_state.wygenerowana = True
+if przycisk:
+  st.session_state.wygenerowana = True
  siła = random.randint(1,100)
  szybkość = random.randint(1,100)
  inteligencja = random.randint(1,100)
