@@ -51,7 +51,7 @@ if st.button("Generuj postać"):
    "Przeklęty Bard", 
    "Mnich Alkoholik" 
     ]
- wylosowana_klasa = random.choice(klasy)
+  wylosowana_klasa = random.choice(klasy)
  if wylosowana_klasa == "Paladyn Kapitalista":
   siła = random.randint(81,100)
   inteligencja = random.randint(61,100)
