@@ -32,7 +32,7 @@ wylosowany_początek = random.choice(początek)
 wylosowany_koniec_męski = random.choice(koniec_męski)
 wylosowany_koniec_damski = random.choice(koniec_damski)
 while True:
- płeć = st.selectbox("Wybierz płeć:", ["Kobieta","Mężczyzna"])
+ płeć = st.selectbox("Wybierz płeć:", ["Kobieta", "Mężczyzna"])
  if płeć == "1":
   print("Imię:", wylosowany_początek + wylosowany_koniec_damski)
   print("Płeć: Kobieta")
